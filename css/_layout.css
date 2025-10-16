@@ -1,0 +1,30 @@
+/* ARQUIVO: _layout.css */
+
+/* Layout principal com Grid */
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header { grid-area: header; background-color: var(--cor-fundo-componente); box-shadow: var(--box-shadow); padding: var(--spacing-sm) 0; position: sticky; top: 0; z-index: 10; }
+main { grid-area: main; padding: var(--spacing-xl) 0; }
+footer { grid-area: footer; background-color: #2b2b2b; color: var(--cor-texto-claro); padding: var(--spacing-lg) 0; }
+
+/* Classe Container para centralizar o conteúdo */
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin-inline: auto; /* Centraliza o container horizontalmente */
+}
+
+/* Sistema de Grid de 12 colunas */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-md);
+}

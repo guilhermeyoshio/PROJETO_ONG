@@ -1,0 +1,33 @@
+/* ARQUIVO: _responsive.css */
+
+/* Telas médias (Tablets em paisagem, ~992px) */
+@media (max-width: 992px) {
+  /* Exemplo: Fazer os cards ocuparem 2 colunas */
+  /* .projeto-card { grid-column: span 6; } */
+}
+
+/* Telas pequenas (Tablets em retrato, ~768px) */
+@media (max-width: 768px) {
+  /* É aqui que o menu normal some e o hambúrguer aparece */
+  header nav ul {
+    /* display: none; */ /* Esconder o menu normal */
+  }
+}
+
+/* Telas extra-pequenas (Celulares, ~576px) */
+@media (max-width: 576px) {
+  h1 { font-size: var(--fs-h2); }
+  main { padding: var(--spacing-lg) 0; }
+  /* Exemplo: Fazer os cards ocuparem a tela toda */
+  /* .projeto-card { grid-column: span 12; } */
+}
+
+/* Breakpoint extra 1 */
+@media (max-width: 1200px) {
+  /* Regras para laptops */
+}
+
+/* Breakpoint extra 2 */
+@media (max-width: 480px) {
+  /* Regras para celulares menores */
+}

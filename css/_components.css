@@ -1,0 +1,89 @@
+/* ARQUIVO: _components.css */
+
+/* ===== Header & Navegação ===== */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+}
+header nav a {
+  text-decoration: none;
+  color: var(--cor-texto-escuro);
+  font-weight: 700;
+  transition: var(--transition);
+}
+header nav a:hover {
+  color: var(--cor-primaria);
+}
+
+/* ===== Botões ===== */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-escuro);
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--fonte-titulos);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== Cards de Projeto ===== */
+.card {
+  background-color: var(--cor-fundo-componente);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+  display: block;
+}
+.card-content {
+  padding: var(--spacing-md);
+}
+
+/* ===== Formulários ===== */
+.form-group {
+  margin-bottom: var(--spacing-sm);
+}
+.form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 700;
+}
+.form-group input {
+  width: 100%;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+.form-group input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(10, 61, 98, 0.2); /* Sombra da cor primária com transparência */
+}
+.form-group input:invalid {
+  border-color: var(--cor-perigo);
+}

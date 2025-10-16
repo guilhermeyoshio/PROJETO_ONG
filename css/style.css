@@ -1,0 +1,28 @@
+/* ARQUIVO: style.css */
+
+/* Importa todas as nossas folhas de estilo modulares */
+@import url('_variables.css');
+@import url('_layout.css');
+@import url('_components.css');
+@import url('_responsive.css');
+
+/* Resets e Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulos);
+  color: var(--cor-primaria);
+  margin-bottom: var(--spacing-sm);
+}
+
